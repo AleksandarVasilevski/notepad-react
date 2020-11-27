@@ -1,12 +1,16 @@
-import React, {Component} from 'react';
+import React, {Component, Fragment} from 'react';
 
 import classes from './Layout.module.css';
+import Toolbar from '../../organisms/Toolbar/Toolbar';
 
 class Layout extends Component {
 
   render(){
     return(
-      <div className={classes.Layout}>Layout</div>
+      <Fragment>
+        <Toolbar />
+        <main className={classes.Layout}>{this.props.children}</main>
+      </Fragment>
     );
   }
 }
