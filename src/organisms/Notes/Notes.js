@@ -5,10 +5,10 @@ import Note from '../../molecules/Note/Note';
 
 const notes = () => (
   <div className={classes.Notes}>
-    <Note/>
-    <Note/>
-    <Note/>
-    <Note/>
+    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
+    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
+    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
+    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
   </div>
 );
 
