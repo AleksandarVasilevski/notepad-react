@@ -1,16 +1,22 @@
 import React from 'react';
+import propTypes from 'prop-types';
 
 import classes from './Notes.module.css';
 import Note from '../../molecules/Note/Note';
 
-const notes = () => (
+const notes = (props) => (
   <div className={classes.Notes}>
-    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
-    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
-    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
-    <Note title="Title" description="Short note..." timeStamp="02.09.2020, 16:00"/>
+    {props.notes.map(note => {
+      return(
+        <Note key={note.id} title={note.title} description={note.description} timeStamp={note.timeStamp}/>
+      )
+    })}
   </div>
 );
+
+notes.propTypes = {
+  notes: propTypes.array
+}
 
 export default notes;
 
