@@ -1,0 +1,28 @@
+.Note {
+  width: 200px;
+  height: 150px;
+  margin: 4px;
+  padding: 8px;
+  background-color: #fff;
+  border: 1px solid #999;
+  border-radius: 8px;
+  position: relative;
+}
+
+.Title {
+  margin: 0;
+  padding: 0;
+}
+
+.Description {
+  margin: 0;
+  padding: 10px 0;
+}
+
+.TimeStamp {
+  margin: 0 0 0 ;
+  text-align: end;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+}

@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 
-import Layout from './templates/Layout/Layout';
+import NotesPage from './pages/NotesPage/NotesPage';
 
 class App extends Component {
   render(){
     return (
-      <Layout/>
+      <NotesPage/>
     );
   }
 }

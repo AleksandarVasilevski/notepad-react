@@ -1,0 +1,6 @@
+.Notes {
+  padding: 4px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
