@@ -1,8 +1,20 @@
 .Toolbar {
-  height: 56px;
+  height: 42px;
   width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 90;
+  display: flex;
+  justify-content: space-between;
+  padding: 4px;
+}
+
+.HamburgerMenu {
+  padding: 8px;
+}
+
+.AppTitle {
+  font-size: 22px;
+  margin: 0 !important;
 }
