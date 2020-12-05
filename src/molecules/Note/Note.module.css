@@ -12,6 +12,11 @@
   cursor: pointer;
 }
 
+.Note:hover {
+  box-shadow: 0px 4px 4px #c1c1c1;
+  transition: 0.5s;
+}
+
 .Title {
   margin: 0;
   padding: 0;
