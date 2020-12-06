@@ -3,7 +3,6 @@ import React, {Component} from 'react';
 import Layout from '../../templates/Layout/Layout';
 import Notes from '../../organisms/Notes/Notes';
 import FloatingActionButton from '../../atoms/FloatingActionButton/FloatingActionButton';
-import note from '../../molecules/Note/Note';
 
 class NotesPage extends Component{
 
@@ -42,7 +41,9 @@ class NotesPage extends Component{
   }
 
   fabClickHandler =() => {
-    this.addNote(); 
+    
+    //For testing
+    // this.addNote(); 
   }
 
   render(){
