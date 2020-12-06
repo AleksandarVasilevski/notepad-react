@@ -11,7 +11,7 @@ class NotePage extends Component{
         <Input type='title'/>
         <Input type='description'/>
       </Layout>
-    )
+    );
   }
 }
 

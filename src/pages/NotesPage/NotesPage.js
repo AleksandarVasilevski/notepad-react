@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 import Layout from '../../templates/Layout/Layout';
 import Notes from '../../organisms/Notes/Notes';
@@ -50,7 +51,9 @@ class NotesPage extends Component{
     return(
       <Layout>
         <Notes notes={this.state.notes}/>
-        <FloatingActionButton onclick={this.fabClickHandler}/>
+        <Link to="/note">
+          <FloatingActionButton onclick={this.fabClickHandler}/>
+        </Link>
       </Layout>
     )
   }
