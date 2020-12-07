@@ -9,7 +9,7 @@ const toolbar = (props) => {
     <header className={classes.Toolbar}>
       <FontAwesomeIcon className={classes.HamburgerMenu} icon={faBars} size="lg" />
       <h1 className={classes.AppTitle}>Notes</h1>
-      <nav>Navigation Items</nav>
+      <nav className={classes.NavigationItems}>Navigation Items</nav>
     </header>
   );
 }

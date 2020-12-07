@@ -8,8 +8,8 @@ class NotePage extends Component{
   render(){
     return(
       <Layout>
-        <Input type='title'/>
-        <Input type='description'/>
+        <Input type='title' value='Title'/>
+        <Input type='description' value='Description'/>
       </Layout>
     );
   }

@@ -1,3 +1,10 @@
 .Input {
-  
+  min-height: 30px;
+  width: 100%;
+  font-size: 18px;
+  background-color: #f5f5f5;
+  border: none;
+  border-bottom: #c1c1c1 2px solid;
+  outline: none;
+  display: block;
 }
