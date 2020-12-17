@@ -41,7 +41,7 @@ class NotesPage extends Component{
     this.setState({notes: notes});
   }
 
-  fabClickHandler =() => {
+  fabClickHandler = () => {
     
     //For testing
     // this.addNote(); 
