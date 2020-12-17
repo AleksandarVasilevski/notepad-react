@@ -8,7 +8,6 @@ import classes from './Toolbar.module.css';
 const toolbar = (props) => {
 
   const navigationItems = () => {
-    console.log(props.location.pathname);
     switch(props.location.pathname){
       case '/note':
         return 'Note';
