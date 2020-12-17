@@ -13,7 +13,7 @@ const toolbar = (props) => {
   const navigationItems = () => {
     switch(props.location.pathname){
       case '/note':
-        return <NoteNavigationItems />;
+        return <NoteNavigationItems onback={props.onback} onsave={props.onsave}/>;
       default:
         return <NotesNavigationItems />;
     }

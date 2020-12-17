@@ -10,6 +10,14 @@ class NotePage extends Component {
     description: ''
   }
 
+  onBack = () => {
+    console.log('back pressed');
+  }
+
+  onSave = () => {
+    console.log('save pressed');
+  }
+
   onChangeHandler = (e, type) => {
     if(type === 'title'){
       this.setState({title: e.target.value});
@@ -20,7 +28,7 @@ class NotePage extends Component {
 
   render(){
     return(
-      <Layout>
+      <Layout onback={this.onBack} onsave={this.onSave}>
         <Input type='title' value={this.state.title} placeholder="Title" onChange={this.onChangeHandler}/>
         <Input type='description' value={this.state.description} placeholder="Description" onChange={this.onChangeHandler}/>
       </Layout>

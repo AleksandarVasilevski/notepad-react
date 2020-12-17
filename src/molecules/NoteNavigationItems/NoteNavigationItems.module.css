@@ -1,11 +1,14 @@
 .FirstItem {
     margin: 0 16px 0 0;
+    cursor: pointer;
 }
 
 .Item {
     margin: 0 16px;
+    cursor: pointer;
 }
 
 .LastItem {
     margin: 0, 0, 16px 0;
+    cursor: pointer;
 }

@@ -4,10 +4,10 @@ import { faSave, faBackward } from '@fortawesome/free-solid-svg-icons';
 
 import classes from './NoteNavigationItems.module.css';
 
-const noteNavigationItems = () => (
+const noteNavigationItems = (props) => (
     <Fragment>
-        <FontAwesomeIcon className={classes.FirstItem} icon={faBackward} size="lg" />
-        <FontAwesomeIcon className={classes.LastItem} icon={faSave} size="lg" />
+        <FontAwesomeIcon className={classes.FirstItem} icon={faBackward} size="lg" onClick={props.onback}/>
+        <FontAwesomeIcon className={classes.LastItem} icon={faSave} size="lg" onClick={props.onsave}/>
     </Fragment>
 );
 
