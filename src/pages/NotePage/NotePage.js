@@ -6,8 +6,8 @@ import Input from '../../atoms/Input/Input';
 class NotePage extends Component {
 
   state = {
-    title: 'Title',
-    description: 'Description'
+    title: '',
+    description: ''
   }
 
   onChangeHandler = (e, type) => {
@@ -21,8 +21,8 @@ class NotePage extends Component {
   render(){
     return(
       <Layout>
-        <Input type='title' value={this.state.title} onChange={this.onChangeHandler}/>
-        <Input type='description' value={this.state.description} onChange={this.onChangeHandler}/>
+        <Input type='title' value={this.state.title} placeholder="Title" onChange={this.onChangeHandler}/>
+        <Input type='description' value={this.state.description} placeholder="Description" onChange={this.onChangeHandler}/>
       </Layout>
     );
   }
