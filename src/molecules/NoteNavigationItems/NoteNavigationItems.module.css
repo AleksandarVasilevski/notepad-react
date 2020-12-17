@@ -1,0 +1,11 @@
+.FirstItem {
+    margin: 0 16px 0 0;
+}
+
+.Item {
+    margin: 0 16px;
+}
+
+.LastItem {
+    margin: 0, 0, 16px 0;
+}

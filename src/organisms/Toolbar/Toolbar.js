@@ -3,6 +3,9 @@ import { withRouter } from 'react-router-dom'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 
+import NotesNavigationItems from '../../molecules/NotesNavigationItems/NotesNavigationItems';
+import NoteNavigationItems from '../../molecules/NoteNavigationItems/NoteNavigationItems';
+
 import classes from './Toolbar.module.css';
 
 const toolbar = (props) => {
@@ -10,9 +13,9 @@ const toolbar = (props) => {
   const navigationItems = () => {
     switch(props.location.pathname){
       case '/note':
-        return 'Note';
+        return <NoteNavigationItems />;
       default:
-        return 'Notes'
+        return <NotesNavigationItems />;
     }
   }
 
