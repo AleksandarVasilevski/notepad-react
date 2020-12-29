@@ -19,7 +19,7 @@ class NotePage extends Component {
   }
 
   onDelete = () => {
-    console.log('back pressed');
+    console.log('delete pressed');
   }
 
   onChangeHandler = (e, type) => {

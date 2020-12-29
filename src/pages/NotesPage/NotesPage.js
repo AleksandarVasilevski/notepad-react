@@ -21,7 +21,6 @@ class NotesPage extends Component{
   render(){
     return(
       <Layout>
-        {console.log(this.props.notes)}
         <Notes notes={this.props.notes}/>
         <Link to='/note'>
           <FloatingActionButton onclick={this.fabClickHandler}/>
@@ -32,7 +31,6 @@ class NotesPage extends Component{
 }
 
 const mapStateToProps = state => {
-  console.log(state.notes)
   return{
     notes: state.notes
   };

@@ -22,14 +22,12 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-  console.log(action)
   if(action.type === 'CREATE'){
     return{
       ...state,
       notes: [...state.notes, action.note]
     }
   }
-  console.log(initialState)
   return state;
 }
 
