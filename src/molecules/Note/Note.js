@@ -7,14 +7,14 @@ const note = (props) => (
   <div className={classes.Note}>
     <h2 className={classes.Title}>{props.title}</h2>
     <p className={classes.Description}>{props.description}</p>
-    <p className={classes.TimeStamp}>{props.timeStamp}</p>
+    <p className={classes.TimeStamp}>{props.timeStamp.toISOString().replace(/T/, ' ').replace(/\..+/, '')}</p>
   </div>
 );
 
 note.propTypes = {
   title: propTypes.string,
   description: propTypes.string,
-  timeStamp: propTypes.string.isRequired
+  timeStamp: propTypes.object.isRequired
 }
 
 export default note;

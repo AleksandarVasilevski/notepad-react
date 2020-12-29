@@ -7,10 +7,10 @@ import Input from '../../atoms/Input/Input';
 class NotePage extends Component {
 
   state = {
-    id: '',
+    id: Math.floor(Math.random() * 10000),
     title: '',
     description: '',
-    timeStamp: ''
+    timeStamp: new Date(),
   }
 
   onSave = () => {
