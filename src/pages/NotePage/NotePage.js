@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import { connect } from 'react-redux';
 
 import Layout from '../../templates/Layout/Layout';
 import Input from '../../atoms/Input/Input';
@@ -6,16 +7,19 @@ import Input from '../../atoms/Input/Input';
 class NotePage extends Component {
 
   state = {
+    id: '',
     title: '',
-    description: ''
-  }
-
-  onBack = () => {
-    console.log('back pressed');
+    description: '',
+    timeStamp: ''
   }
 
   onSave = () => {
+    this.props.onNoteCreate(this.state);
     console.log('save pressed');
+  }
+
+  onDelete = () => {
+    console.log('back pressed');
   }
 
   onChangeHandler = (e, type) => {
@@ -28,7 +32,7 @@ class NotePage extends Component {
 
   render(){
     return(
-      <Layout onback={this.onBack} onsave={this.onSave}>
+      <Layout onsave={this.onSave} ondelete={this.onDelete}>
         <Input type='title' value={this.state.title} placeholder="Title" onChange={this.onChangeHandler}/>
         <Input type='description' value={this.state.description} placeholder="Description" onChange={this.onChangeHandler}/>
       </Layout>
@@ -36,4 +40,10 @@ class NotePage extends Component {
   }
 }
 
-export default NotePage;
+const mapDispatchToProps = dispatch => {
+  return{
+    onNoteCreate: (note) => dispatch({type: 'CREATE', note: note})
+  }
+}
+
+export default connect(null, mapDispatchToProps)(NotePage);

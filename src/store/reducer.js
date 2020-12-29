@@ -22,7 +22,15 @@ const initialState = {
 }
 
 const reducer = (state = initialState, action) => {
-    return state;
+  console.log(action)
+  if(action.type === 'CREATE'){
+    return{
+      ...state,
+      notes: [...state.notes, action.note]
+    }
+  }
+  console.log(initialState)
+  return state;
 }
 
 export default reducer;

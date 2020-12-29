@@ -8,7 +8,7 @@ class Layout extends Component {
   render(){
     return(
       <Fragment>
-        <Toolbar onback={this.props.onback} onsave={this.props.onsave}/>
+        <Toolbar onsave={this.props.onsave} ondelete={this.props.ondelete}/>
         <main className={classes.Layout}>{this.props.children}</main>
       </Fragment>
     );
