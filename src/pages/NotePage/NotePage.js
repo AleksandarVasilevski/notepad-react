@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 
 import Layout from '../../templates/Layout/Layout';
 import Input from '../../atoms/Input/Input';
+import * as actionTypes from '../../store/actions';
 
 class NotePage extends Component {
 
@@ -42,7 +43,7 @@ class NotePage extends Component {
 
 const mapDispatchToProps = dispatch => {
   return{
-    onNoteCreate: (note) => dispatch({type: 'CREATE', note: note})
+    onNoteCreate: (note) => dispatch({type: actionTypes.CREATE_NOTE, note: note})
   }
 }
 
